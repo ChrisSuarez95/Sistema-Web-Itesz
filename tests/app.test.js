@@ -1,6 +1,6 @@
 // 4 Pruebas automáticas - Sistema de Tickets ITESZ
-const { test } = require('node:test');
-const assert = require('node:assert');
+import { test } from 'node:test';
+import assert from 'node:assert';
 
 function validarLogin(email, password) {
   if (email === 'chris@test.com' && password === '123') return true;
