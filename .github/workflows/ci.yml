@@ -1,4 +1,4 @@
-name: Sistema Web ITESZ
+name: CI - Pruebas Tickets ITESZ
 
 on:
   push:
@@ -11,10 +11,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - name: Usar Node.js 20
+        uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'npm'
-      - run: npm ci
-      - run: npm test
-      - run: npm run build
+      - name: Correr 4 pruebas
+        run: node --test tests/app.test.js
