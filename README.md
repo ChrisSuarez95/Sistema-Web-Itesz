@@ -1,19 +1,42 @@
-# React + Vite
+# Sistema de Tickets ITESZ - Sistema-Web-Itesz
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Proyecto Integrador - Desarrollo Individual
+Alumno: Christian Emmanuel Suarez Zinzun- ITESZ
 
-Currently, two official plugins are available:
+Sistema web para organizar reportes de fallas de equipos en el ITESZ. Evita reportes perdidos en papel o WhatsApp, con control por folio, estado y usuario.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Repositorio: https://github.com/ChrisSuarez95/Sistema-Web-Itesz
 
-## React Compiler
+## Funcionalidades
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+- Login con usuario y contraseña
+- Crear ticket con asunto y descripción
+- Listar tickets con folio consecutivo #0001, #0002...
+- Cambiar estado: Abierto / En proceso / Cerrado
+- Eliminar ticket (CRUD completo)
 
-Note: This will impact Vite dev & build performances.
-You can also try [the experimental native React Compiler support in plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md#rust-react-compiler) by using `compiler: true` in the plugin options instead of using the Babel plugin.
+## Arquitectura
 
-## Expanding the Oxlint configuration
+Se usa arquitectura MVVM:
+- **Model:** Datos del ticket (folio, asunto, descripción, estado)
+- **View:** Pantalla que ve el usuario (React)
+- **ViewModel:** Lógica entre la vista y los datos
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## Tecnologías
+
+- React + Vite
+- JavaScript
+- Node.js v20
+- GitHub Actions para pruebas automáticas
+
+## Requisitos para correrlo
+
+- Node.js v20 o superior
+- Navegador web (Chrome / Edge)
+- Git
+
+## Cómo ejecutarlo en local - Para el profe
+
+1. Clonar el repositorio:
+```bash
+git clone https://github.com/ChrisSuarez95/Sistema-Web-Itesz.git
