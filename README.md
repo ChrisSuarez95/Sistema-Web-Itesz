@@ -15,9 +15,9 @@ Repositorio: https://github.com/ChrisSuarez95/Sistema-Web-Itesz
 - Listar tickets con folio consecutivo #0001, #0002...
 - Cambiar estado: Abierto / En Proceso / Cerrado
 - Asignar ticket solo a técnicos
-- Gestión de Usuarios (CRUD completo)
+- Gestión de Usuarios 
 - Gestión de Departamentos
-- Eliminar ticket (CRUD completo)
+- Eliminar ticket 
 - Reporte PDF de tickets
 
 ## Arquitectura
