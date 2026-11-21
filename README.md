@@ -1,6 +1,6 @@
 # Sistema de Tickets ITESZ - Sistema-Web-Itesz
 
-Proyecto Integrador - Desarrollo Individual
+Proyecto Integrador 
 Alumno: Christian Emmanuel Suarez Zinzun - ITESZ
 
 Sistema web para organizar reportes de fallas de equipos en el ITESZ. Evita reportes perdidos en papel o WhatsApp, con control por folio, estado y usuario.
